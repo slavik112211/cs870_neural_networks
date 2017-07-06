@@ -11,13 +11,14 @@ IMAGE_WIDTH = 480
 IMAGE_HEIGHT = 240
 categories_list = sorted(get_trains_filters().keys())
 INPUT_LAYER_SIZE = IMAGE_WIDTH*IMAGE_HEIGHT # 115200
-OUTPUT_LAYER_SIZE = len(categories_list)    # 88
+# OUTPUT_LAYER_SIZE = len(categories_list)    # 88
+OUTPUT_LAYER_SIZE = 10 # a,b,c,d,e,f,g,h,i,j
 
 def main():
   pdb.set_trace()
   training_data, test_data = load_dataset()
-  net = network.Network([INPUT_LAYER_SIZE, 200, OUTPUT_LAYER_SIZE])
-  net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
+  net = network.Network([INPUT_LAYER_SIZE, 30, OUTPUT_LAYER_SIZE])
+  net.SGD(training_data, 30, 10, 1.0, test_data=test_data)
 
 def load_dataset():
   image_labels_dict = {}
@@ -37,7 +38,8 @@ def load_dataset():
 
     # pick category with lowest luminosity value: {30000=>'a1', 31000=>'a2'}
     category = categories_map[min(categories_map)]
-    category_id = categories_list.index(category)
+    # category_id = categories_list.index(category)
+    category_id = get_united_category_id(category)
     if image_file not in test_set_filenames: 
       training_data.append((image_matrix, vectorized_output(category_id)))
     else:
@@ -46,8 +48,23 @@ def load_dataset():
   return (training_data, test_data)
 
 def vectorized_output(category_id):
-    e = np.zeros((len(categories_list), 1))
+    e = np.zeros((OUTPUT_LAYER_SIZE, 1))
     e[category_id] = 1.0
     return e
+
+def get_united_category_id(category_name):
+  category_id = -1
+  if   'a' in category_name: category_id = 0
+  elif 'b' in category_name: category_id = 1
+  elif 'c' in category_name: category_id = 2
+  elif 'd' in category_name: category_id = 3
+  elif 'e' in category_name: category_id = 4
+  elif 'f' in category_name: category_id = 5
+  elif 'g' in category_name: category_id = 6
+  elif 'h' in category_name: category_id = 7
+  elif 'i' in category_name: category_id = 8
+  elif 'j' in category_name: category_id = 9
+
+  return category_id
 
 main()
