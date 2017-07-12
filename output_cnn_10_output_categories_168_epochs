@@ -1,0 +1,322 @@
+vderevya@scspc671:/home/u3/vderevyanko/workspace/cs870_neural_networks$ python trains_tensorflow_cnn_classifier.py
+> /home/u3/vderevyanko/workspace/cs870_neural_networks/trains_dataset.py(45)load_trains_dataset()
+-> return (training_data, test_data)
+(Pdb) c
+2017-07-12 00:21:28.820259: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-12 00:21:28.820301: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-12 00:21:28.820310: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-12 00:21:28.820318: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-12 00:21:29.029376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 750 Ti
+major: 5 minor: 0 memoryClockRate (GHz) 1.15
+pciBusID 0000:01:00.0
+Total memory: 1.95GiB
+Free memory: 1.66GiB
+2017-07-12 00:21:29.029422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-07-12 00:21:29.029430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-07-12 00:21:29.029441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 750 Ti, pci bus id: 0000:01:00.0)
+2017-07-12 00:21:30.739302: W tensorflow/core/common_runtime/bfc_allocator.cc:217] Allocator (GPU_0_bfc) ran out of memory trying to allocate 549.32MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory is available.
+2017-07-12 00:21:30.739374: W tensorflow/core/common_runtime/bfc_allocator.cc:217] Allocator (GPU_0_bfc) ran out of memory trying to allocate 505.41MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory is available.
+2017-07-12 00:21:31.113164: W tensorflow/core/common_runtime/bfc_allocator.cc:217] Allocator (GPU_0_bfc) ran out of memory trying to allocate 606.19MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory is available.
+2017-07-12 00:21:31.229997: W tensorflow/core/common_runtime/bfc_allocator.cc:217] Allocator (GPU_0_bfc) ran out of memory trying to allocate 447.07MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory is available.
+2017-07-12 00:21:53.768046: Epoch completed 1
+2017-07-12 00:22:16.489046: Epoch completed 2
+step 300, training accuracy 0
+test accuracy 0.213043
+2017-07-12 00:22:41.060375: Epoch completed 3
+2017-07-12 00:23:03.753865: Epoch completed 4
+2017-07-12 00:23:27.263822: Epoch completed 5
+step 600, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 00:23:52.164228: Epoch completed 6
+2017-07-12 00:24:15.751620: Epoch completed 7
+step 900, training accuracy 0.1
+test accuracy 0.213043
+2017-07-12 00:24:40.178279: Epoch completed 8
+2017-07-12 00:25:02.916368: Epoch completed 9
+2017-07-12 00:25:25.593848: Epoch completed 10
+step 1200, training accuracy 0.4
+test accuracy 0.204348
+2017-07-12 00:25:49.403946: Epoch completed 11
+2017-07-12 00:26:12.078685: Epoch completed 12
+step 1500, training accuracy 0.2
+test accuracy 0.213043
+2017-07-12 00:26:35.886709: Epoch completed 13
+2017-07-12 00:26:58.530214: Epoch completed 14
+2017-07-12 00:27:21.187452: Epoch completed 15
+step 1800, training accuracy 0.1
+test accuracy 0.213043
+2017-07-12 00:27:45.002240: Epoch completed 16
+2017-07-12 00:28:07.668703: Epoch completed 17
+step 2100, training accuracy 0.3
+test accuracy 0.217391
+2017-07-12 00:28:31.495593: Epoch completed 18
+2017-07-12 00:28:54.166631: Epoch completed 19
+2017-07-12 00:29:16.852769: Epoch completed 20
+step 2400, training accuracy 0.1
+test accuracy 0.213043
+2017-07-12 00:29:40.669955: Epoch completed 21
+2017-07-12 00:30:03.360099: Epoch completed 22
+step 2700, training accuracy 0.1
+test accuracy 0.204348
+2017-07-12 00:30:27.192448: Epoch completed 23
+2017-07-12 00:30:50.150210: Epoch completed 24
+2017-07-12 00:31:12.852898: Epoch completed 25
+step 3000, training accuracy 0.2
+test accuracy 0.204348
+2017-07-12 00:31:36.704707: Epoch completed 26
+2017-07-12 00:31:59.426237: Epoch completed 27
+step 3300, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 00:32:23.264179: Epoch completed 28
+2017-07-12 00:32:45.977848: Epoch completed 29
+2017-07-12 00:33:08.706032: Epoch completed 30
+step 3600, training accuracy 0.2
+test accuracy 0.2
+2017-07-12 00:33:32.758925: Epoch completed 31
+2017-07-12 00:33:56.658794: Epoch completed 32
+step 3900, training accuracy 0.4
+test accuracy 0.213043
+2017-07-12 00:34:20.494638: Epoch completed 33
+2017-07-12 00:34:43.174334: Epoch completed 34
+2017-07-12 00:35:05.865934: Epoch completed 35
+step 4200, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 00:35:29.699328: Epoch completed 36
+2017-07-12 00:35:52.397038: Epoch completed 37
+step 4500, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 00:36:16.232954: Epoch completed 38
+2017-07-12 00:36:38.895241: Epoch completed 39
+2017-07-12 00:37:01.579908: Epoch completed 40
+step 4800, training accuracy 0
+test accuracy 0.2
+2017-07-12 00:37:25.406072: Epoch completed 41
+2017-07-12 00:37:48.079864: Epoch completed 42
+step 5100, training accuracy 0.6
+test accuracy 0.204348
+2017-07-12 00:38:11.916618: Epoch completed 43
+2017-07-12 00:38:34.654137: Epoch completed 44
+2017-07-12 00:38:57.467538: Epoch completed 45
+step 5400, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 00:39:21.311242: Epoch completed 46
+2017-07-12 00:39:43.988427: Epoch completed 47
+step 5700, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 00:40:07.838694: Epoch completed 48
+2017-07-12 00:40:30.563519: Epoch completed 49
+2017-07-12 00:40:53.230353: Epoch completed 50
+step 6000, training accuracy 0.8
+test accuracy 0.213043
+2017-07-12 00:41:17.121036: Epoch completed 51
+2017-07-12 00:41:39.916140: Epoch completed 52
+step 6300, training accuracy 0.2
+test accuracy 0.2
+2017-07-12 00:42:03.741677: Epoch completed 53
+2017-07-12 00:42:26.497030: Epoch completed 54
+2017-07-12 00:42:49.236639: Epoch completed 55
+step 6600, training accuracy 0.4
+test accuracy 0.213043
+2017-07-12 00:43:13.186366: Epoch completed 56
+2017-07-12 00:43:36.025319: Epoch completed 57
+step 6900, training accuracy 0.2
+test accuracy 0.208696
+2017-07-12 00:43:59.905451: Epoch completed 58
+2017-07-12 00:44:22.580301: Epoch completed 59
+2017-07-12 00:44:45.260371: Epoch completed 60
+step 7200, training accuracy 0.1
+test accuracy 0.213043
+2017-07-12 00:45:09.058285: Epoch completed 61
+2017-07-12 00:45:31.702530: Epoch completed 62
+2017-07-12 00:45:54.374903: Epoch completed 63
+step 7500, training accuracy 0.3
+test accuracy 0.195652
+2017-07-12 00:46:18.160519: Epoch completed 64
+2017-07-12 00:46:40.849685: Epoch completed 65
+step 7800, training accuracy 0.2
+test accuracy 0.213043
+2017-07-12 00:47:04.651501: Epoch completed 66
+2017-07-12 00:47:27.305751: Epoch completed 67
+2017-07-12 00:47:50.008420: Epoch completed 68
+step 8100, training accuracy 0.2
+test accuracy 0.204348
+2017-07-12 00:48:13.809069: Epoch completed 69
+2017-07-12 00:48:36.490846: Epoch completed 70
+step 8400, training accuracy 0.4
+test accuracy 0.217391
+2017-07-12 00:49:00.281907: Epoch completed 71
+2017-07-12 00:49:22.954626: Epoch completed 72
+2017-07-12 00:49:45.635160: Epoch completed 73
+step 8700, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 00:50:10.125203: Epoch completed 74
+2017-07-12 00:50:32.818086: Epoch completed 75
+step 9000, training accuracy 0.1
+test accuracy 0.204348
+2017-07-12 00:50:56.647802: Epoch completed 76
+2017-07-12 00:51:19.314096: Epoch completed 77
+2017-07-12 00:51:41.990672: Epoch completed 78
+step 9300, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 00:52:05.781980: Epoch completed 79
+2017-07-12 00:52:28.443872: Epoch completed 80
+step 9600, training accuracy 0.3
+test accuracy 0.204348
+2017-07-12 00:52:52.257019: Epoch completed 81
+2017-07-12 00:53:14.918995: Epoch completed 82
+2017-07-12 00:53:37.607099: Epoch completed 83
+step 9900, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 00:54:01.418917: Epoch completed 84
+2017-07-12 00:54:24.068758: Epoch completed 85
+step 10200, training accuracy 0.3
+test accuracy 0.213043
+2017-07-12 00:54:47.853488: Epoch completed 86
+2017-07-12 00:55:10.524927: Epoch completed 87
+2017-07-12 00:55:33.884466: Epoch completed 88
+step 10500, training accuracy 0.1
+test accuracy 0.217391
+2017-07-12 00:55:57.644531: Epoch completed 89
+2017-07-12 00:56:20.255819: Epoch completed 90
+step 10800, training accuracy 0.4
+test accuracy 0.204348
+2017-07-12 00:56:44.000723: Epoch completed 91
+2017-07-12 00:57:06.632552: Epoch completed 92
+2017-07-12 00:57:29.307885: Epoch completed 93
+step 11100, training accuracy 0.3
+test accuracy 0.2
+2017-07-12 00:57:53.079091: Epoch completed 94
+2017-07-12 00:58:15.782380: Epoch completed 95
+step 11400, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 00:58:39.567528: Epoch completed 96
+2017-07-12 00:59:02.283369: Epoch completed 97
+2017-07-12 00:59:25.171829: Epoch completed 98
+step 11700, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 00:59:49.410680: Epoch completed 99
+2017-07-12 01:00:12.573597: Epoch completed 100
+step 12000, training accuracy 0.3
+test accuracy 0.204348
+2017-07-12 01:00:37.495985: Epoch completed 101
+2017-07-12 01:01:00.212348: Epoch completed 102
+2017-07-12 01:01:22.834637: Epoch completed 103
+step 12300, training accuracy 0.4
+test accuracy 0.2
+2017-07-12 01:01:46.581311: Epoch completed 104
+2017-07-12 01:02:09.189078: Epoch completed 105
+step 12600, training accuracy 0.1
+test accuracy 0.204348
+2017-07-12 01:02:32.958668: Epoch completed 106
+2017-07-12 01:02:55.559505: Epoch completed 107
+2017-07-12 01:03:18.154117: Epoch completed 108
+step 12900, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 01:03:41.884682: Epoch completed 109
+2017-07-12 01:04:04.497503: Epoch completed 110
+step 13200, training accuracy 0.2
+test accuracy 0.204348
+2017-07-12 01:04:28.225938: Epoch completed 111
+2017-07-12 01:04:50.833604: Epoch completed 112
+2017-07-12 01:05:13.427219: Epoch completed 113
+step 13500, training accuracy 0.2
+test accuracy 0.208696
+2017-07-12 01:05:37.136987: Epoch completed 114
+2017-07-12 01:05:59.734799: Epoch completed 115
+step 13800, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 01:06:23.464350: Epoch completed 116
+2017-07-12 01:06:46.068098: Epoch completed 117
+2017-07-12 01:07:08.685690: Epoch completed 118
+step 14100, training accuracy 0.2
+test accuracy 0.213043
+2017-07-12 01:07:32.414584: Epoch completed 119
+2017-07-12 01:07:55.021921: Epoch completed 120
+2017-07-12 01:08:17.634863: Epoch completed 121
+step 14400, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 01:08:41.374575: Epoch completed 122
+2017-07-12 01:09:03.988628: Epoch completed 123
+step 14700, training accuracy 0.1
+test accuracy 0.213043
+2017-07-12 01:09:27.716626: Epoch completed 124
+2017-07-12 01:09:50.326713: Epoch completed 125
+2017-07-12 01:10:12.990384: Epoch completed 126
+step 15000, training accuracy 0.3
+test accuracy 0.213043
+2017-07-12 01:10:37.322304: Epoch completed 127
+2017-07-12 01:11:00.580603: Epoch completed 128
+step 15300, training accuracy 0.1
+test accuracy 0.204348
+2017-07-12 01:11:25.216595: Epoch completed 129
+2017-07-12 01:11:47.915364: Epoch completed 130
+2017-07-12 01:12:10.526141: Epoch completed 131
+step 15600, training accuracy 0.2
+test accuracy 0.204348
+2017-07-12 01:12:34.264550: Epoch completed 132
+2017-07-12 01:12:56.895813: Epoch completed 133
+step 15900, training accuracy 0.5
+test accuracy 0.204348
+2017-07-12 01:13:20.899319: Epoch completed 134
+2017-07-12 01:13:43.553670: Epoch completed 135
+2017-07-12 01:14:06.222220: Epoch completed 136
+step 16200, training accuracy 0.3
+test accuracy 0.204348
+2017-07-12 01:14:30.102811: Epoch completed 137
+2017-07-12 01:14:52.764221: Epoch completed 138
+step 16500, training accuracy 0.3
+test accuracy 0.213043
+2017-07-12 01:15:16.589891: Epoch completed 139
+2017-07-12 01:15:39.301580: Epoch completed 140
+2017-07-12 01:16:02.053575: Epoch completed 141
+^R
+step 16800, training accuracy 0.2
+test accuracy 0.213043
+2017-07-12 01:16:25.975950: Epoch completed 142
+2017-07-12 01:16:48.932997: Epoch completed 143
+step 17100, training accuracy 0.4
+test accuracy 0.213043
+2017-07-12 01:17:13.238925: Epoch completed 144
+2017-07-12 01:17:37.318184: Epoch completed 145
+2017-07-12 01:18:00.042077: Epoch completed 146
+step 17400, training accuracy 0.3
+test accuracy 0.213043
+2017-07-12 01:18:23.923854: Epoch completed 147
+2017-07-12 01:18:46.665078: Epoch completed 148
+step 17700, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 01:19:10.610693: Epoch completed 149
+2017-07-12 01:19:33.265710: Epoch completed 150
+2017-07-12 01:19:55.925952: Epoch completed 151
+step 18000, training accuracy 0.3
+test accuracy 0.204348
+2017-07-12 01:20:19.729207: Epoch completed 152
+2017-07-12 01:20:42.370110: Epoch completed 153
+step 18300, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 01:21:06.165510: Epoch completed 154
+2017-07-12 01:21:29.507280: Epoch completed 155
+2017-07-12 01:21:52.539072: Epoch completed 156
+step 18600, training accuracy 0.2
+test accuracy 0.2
+2017-07-12 01:22:17.027852: Epoch completed 157
+2017-07-12 01:22:39.707589: Epoch completed 158
+step 18900, training accuracy 0.2
+test accuracy 0.213043
+2017-07-12 01:23:03.554420: Epoch completed 159
+2017-07-12 01:23:26.226686: Epoch completed 160
+2017-07-12 01:23:48.898362: Epoch completed 161
+step 19200, training accuracy 0.1
+test accuracy 0.208696
+2017-07-12 01:24:12.732051: Epoch completed 162
+2017-07-12 01:24:35.400937: Epoch completed 163
+step 19500, training accuracy 0.3
+test accuracy 0.208696
+2017-07-12 01:24:59.232939: Epoch completed 164
+2017-07-12 01:25:21.900377: Epoch completed 165
+2017-07-12 01:25:44.575881: Epoch completed 166
+step 19800, training accuracy 0.1
+test accuracy 0.2
+2017-07-12 01:26:08.388476: Epoch completed 167
+2017-07-12 01:26:31.046690: Epoch completed 168
