@@ -1,4 +1,6 @@
-import pdb;
+import pdb
+
+import trains_dataset
 
 """
 network.py
@@ -11,6 +13,8 @@ algorithm for a feedforward neural network.  Gradients are calculated
 using backpropagation.  Note that I have focused on making the code
 simple, easily readable, and easily modifiable.  It is not optimized,
 and omits many desirable features.
+
+sudo update-alternatives --install /usr/lib/libcblas.so.3 libcblas.so.3 /usr/lib/libopenblas.so.0 50
 """
 
 #### Libraries
@@ -63,7 +67,7 @@ class Network(object):
                 training_data[k:k+mini_batch_size]
                 for k in xrange(0, n, mini_batch_size)]
             for batch_index, mini_batch in enumerate(mini_batches):
-                print 'Batch ' + str(batch_index) +'/'+ str(len(mini_batches))
+                print "Batch " + str(batch_index) +"/"+ str(len(mini_batches))
                 self.update_mini_batch(mini_batch, eta)
             if test_data:
                 print "Epoch {0}: {1} / {2}".format(
@@ -82,6 +86,7 @@ class Network(object):
             delta_nabla_b, delta_nabla_w = self.backprop(x, y)
             nabla_b = [nb+dnb for nb, dnb in zip(nabla_b, delta_nabla_b)]
             nabla_w = [nw+dnw for nw, dnw in zip(nabla_w, delta_nabla_w)]
+        # pdb.set_trace()
         self.weights = [w-(eta/len(mini_batch))*nw
                         for w, nw in zip(self.weights, nabla_w)]
         self.biases = [b-(eta/len(mini_batch))*nb
@@ -127,8 +132,12 @@ class Network(object):
         network outputs the correct result. Note that the neural
         network's output is assumed to be the index of whichever
         neuron in the final layer has the highest activation."""
-        test_results = [(np.argmax(self.feedforward(x)), y)
-                        for (x, y) in test_data]
+        # test_results = [(np.argmax(self.feedforward(x)), y)
+        #                 for (x, y) in test_data]
+        test_results = []
+        # pdb.set_trace()
+        for (x, y) in test_data:
+            test_results.append((np.argmax(self.feedforward(x)), y))
         return sum(int(x == y) for (x, y) in test_results)
 
     def cost_derivative(self, output_activations, y):
@@ -145,77 +154,18 @@ def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
 
-# net = Network([2, 3, 1])
-# values = np.array([[144], [240]])
-# pdb.set_trace()
-# feedforwardz = net.feedforward(values)
+def main():
+  pdb.set_trace()
+  training_data, test_data = trains_dataset.load_trains_dataset()
+  net = Network([trains_dataset.INPUT_LAYER_SIZE, trains_dataset.OUTPUT_LAYER_SIZE])
+  net.SGD(training_data, 300, 10, 0.5, test_data=test_data)
+
+def main_mnist():
+  import mnist_loader
+  training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
+  net = Network([784, 30, 10])
+  net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
 
 
-# sizes = [2, 3, 1]
-# biases = [np.random.randn(y, 1) for y in sizes[1:]]
-# weights = [np.random.randn(y, x) for x, y in zip(sizes[:-1], sizes[1:])]
-
-# print biases
-# print "\n"
-# print weights
-# print "\n"
-
-# k = zip(biases, weights)
-
-# print k
-# k = zip([2,3], [3,1])
-# print k
-
-# # print weights.shape
-# print weights[0].shape
-# print weights[1].shape
-
-
-
-
-# print net.biases
-
-# print net.weights
-
-
-# biases = [np.random.randn(y, 1) for y in sizes[1:]]
-
-
-# pong = [np.random.randn(y, 1) for y in sizes[1:]]
-
-# print pong 
-
-# zz = [np.random.randn(3, 1), np.random.randn(1, 1)]
-
-# print zz
-# print zz.shape
-
-# p 
-
-
-# [array([[ 0.28582014],
-#        [ 0.64767074],
-#        [-0.67659116]]), array([[-0.76131953]])]
-
-
-# [array([[-0.22547242, -0.07275537],
-#        [-3.02737645,  0.89874723],
-#        [-0.23394009, -0.39939123]]), array([[ 0.77585189, -0.85106642,  0.15986215]])]
-
-
-
-
-# [(array([[ 0.28582014],
-#        [ 0.64767074],
-#        [-0.67659116]])
-
-
-# , array([[-0.22547242, -0.07275537],
-#        [-3.02737645,  0.89874723],
-#        [-0.23394009, -0.39939123]])), 
-
-
-
-
-
-# (array([[-0.76131953]]), array([[ 0.77585189, -0.85106642,  0.15986215]]))]
+main()
+# main_mnist()
