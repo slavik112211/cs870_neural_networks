@@ -11,6 +11,8 @@ import sys
 sys.path.append('..')
 import trains_dataset
 
+from datetime import datetime
+
 class DataSet(object):
     """Dataset class object."""
 
@@ -56,8 +58,8 @@ class DataSet(object):
         if self._index_in_epoch > self._num_examples:
             # Finished epoch
             self._epochs_completed += 1
-            if(training_data):
-                print "Epoch completed: " + str(self._epochs_completed)
+            if(print_epochs):
+                print str(datetime.now()) + ": Epoch completed " + str(self._epochs_completed)
             # Shuffle the data
             perm = numpy.arange(self._num_examples)
             numpy.random.shuffle(perm)

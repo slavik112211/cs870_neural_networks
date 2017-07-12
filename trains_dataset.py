@@ -18,7 +18,7 @@ def load_trains_dataset():
   with open('./image_labels_dict', 'rb') as image_labels_file:
     image_labels_dict = cPickle.load(image_labels_file)
 
-  images_dir = './trains_images_dataset/preprocessed/'
+  images_dir = './trains_images_preprocessed/'
   total_labelled_images = len(image_labels_dict) # 1436
   test_set_size = int(total_labelled_images / 6) # 239
   train_set_size = total_labelled_images - test_set_size  # 1197

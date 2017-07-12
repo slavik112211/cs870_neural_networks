@@ -85,8 +85,8 @@ def deepnn(x):
 
   # Fully connected layer 1 -- after 2 round of downsampling, our 28x28 image
   # is down to 7x7x64 feature maps -- maps this to 1024 features.
-  W_fc1 = weight_variable([120*60*40, 176])
-  b_fc1 = bias_variable([176])
+  W_fc1 = weight_variable([120*60*40, 200])
+  b_fc1 = bias_variable([200])
 
   h_pool2_flat = tf.reshape(h_pool2, [-1, 120*60*40])
   h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
@@ -97,7 +97,7 @@ def deepnn(x):
   h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 
   # Map the 1024 features to 10 classes, one for each digit
-  W_fc2 = weight_variable([176, OUTPUT_LAYER_SIZE])
+  W_fc2 = weight_variable([200, OUTPUT_LAYER_SIZE])
   b_fc2 = bias_variable([OUTPUT_LAYER_SIZE])
 
   y_conv = tf.matmul(h_fc1_drop, W_fc2) + b_fc2
@@ -152,8 +152,8 @@ def main(_):
       sess.run(tf.global_variables_initializer())
       tf.logging.set_verbosity(tf.logging.DEBUG)
       for i in range(20000):
-        batch = dataset.train.next_batch(5)
-        if i % 2 == 0: print(i) 
+        batch = dataset.train.next_batch(10)
+        # if i % 2 == 0: print(i) 
         if i % 300 == 0 and i != 0:
           train_accuracy = accuracy.eval(feed_dict={
               x: batch[0], y_: batch[1], keep_prob: 1.0})
