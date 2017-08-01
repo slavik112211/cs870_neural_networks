@@ -3,6 +3,8 @@ import numpy as np
 from scipy import misc
 import random
 import pdb
+import os
+from shutil import copyfile
 
 from training_categories import get_trains_filters
 
@@ -43,6 +45,32 @@ def load_trains_dataset():
 
   pdb.set_trace()
   return (training_data, test_data)
+
+def gauss_noise(image):
+  # pdb.set_trace()
+  row, col = image.shape
+  mean = 0; deviation = 8
+  gauss = np.random.normal(mean, deviation, (row,col))
+  gauss = gauss.reshape(row,col)
+  noisy = image + gauss
+  return noisy
+
+def apply_noise():
+  images_dir = './trains_images_preprocessed/'
+  img_filenames = [ filename for filename in os.listdir(images_dir) if filename.endswith('.jpg') ]
+
+  for index, image_file in enumerate(img_filenames):
+    if index % 10 == 0: print str(index) + " / " + str(len(img_filenames))
+    complete_filename = os.path.join(images_dir, image_file)
+    new_file_name = image_file.split('.')[0] + "_0." + image_file.split('.')[1]
+    copyfile(complete_filename, os.path.join(images_dir, "noise", new_file_name))
+
+    image_matrix = misc.imread(complete_filename)
+    image_matrix = image_matrix.astype(np.float32)
+    for i in xrange(1, 10):
+      noisy_image_matrix = gauss_noise(image_matrix)
+      new_file_name = image_file.split('.')[0] + "_" + str(i) + "." + image_file.split('.')[1]
+      misc.imsave(os.path.join(images_dir, "noise", new_file_name), noisy_image_matrix)
 
 def vectorized_output(category_id):
     e = np.zeros((OUTPUT_LAYER_SIZE, 1))
