@@ -60,18 +60,16 @@ def main(_):
 
   epochs_completed = 0; epochs_completed_actual = 0
   # Train
-  for i in range(80000): # 40000*10 / 1197 = 334 epochs
+  for i in range(72000): # 40000*10 / 1197 = 334 epochs
     batch_xs, batch_ys, epochs_completed_actual = dataset.train.next_batch(10)
     sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
-    # if epochs_completed != epochs_completed_actual:
-    #   epochs_completed = epochs_completed_actual
-    #   print(sess.run(accuracy, feed_dict={x: dataset.test.images, y_: dataset.test.labels}))
-    if i % 4000 == 0 or i == 79999:
-      s = sess.run(merged_summary, feed_dict={x: batch_xs, y_: batch_ys})
-      summary_writer.add_summary(s, i)
-      print(sess.run(accuracy, feed_dict={x: dataset.test.images, y_: dataset.test.labels}))
-
-  print(sess.run(accuracy, feed_dict={x: dataset.test.images, y_: dataset.test.labels}))
+    if epochs_completed != epochs_completed_actual:
+      epochs_completed = epochs_completed_actual
+      if epochs_completed != 0 and (epochs_completed % 5 == 0 or epochs_completed == 60 or i == 71999):
+        s = sess.run(merged_summary, feed_dict={x: dataset.test.images, y_: dataset.test.labels})
+        summary_writer.add_summary(s, epochs_completed)
+        print(sess.run(cross_entropy, feed_dict={x: dataset.test.images, y_: dataset.test.labels}))
+        print(sess.run(accuracy, feed_dict={x: dataset.test.images, y_: dataset.test.labels}))
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()

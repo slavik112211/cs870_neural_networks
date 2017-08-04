@@ -40,7 +40,7 @@ class Network(object):
         self.num_layers = len(sizes)
         self.sizes = sizes
         self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
-        self.weights = [np.random.randn(y, x)
+        self.weights = [np.random.randn(y, x)/np.sqrt(x)
                         for x, y in zip(sizes[:-1], sizes[1:])]
 
     def feedforward(self, a):
@@ -67,7 +67,7 @@ class Network(object):
                 training_data[k:k+mini_batch_size]
                 for k in xrange(0, n, mini_batch_size)]
             for batch_index, mini_batch in enumerate(mini_batches):
-                print "Batch " + str(batch_index) +"/"+ str(len(mini_batches))
+                # print "Batch " + str(batch_index) +"/"+ str(len(mini_batches))
                 self.update_mini_batch(mini_batch, eta)
             if test_data:
                 print "Epoch {0}: {1} / {2}".format(
@@ -156,15 +156,15 @@ def sigmoid_prime(z):
 
 def main():
   pdb.set_trace()
-  training_data, test_data = trains_dataset.load_trains_dataset()
+  training_data, test_data = trains_dataset.load_trains_dataset(False)
   net = Network([trains_dataset.INPUT_LAYER_SIZE, trains_dataset.OUTPUT_LAYER_SIZE])
-  net.SGD(training_data, 300, 10, 0.5, test_data=test_data)
+  net.SGD(training_data, 300, 10, 0.14, test_data=test_data)
 
 def main_mnist():
   import mnist_loader
   training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
   net = Network([784, 30, 10])
-  net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
+  net.SGD(training_data, 30, 10, 0.14, test_data=test_data)
 
 
 main()

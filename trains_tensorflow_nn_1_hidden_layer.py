@@ -24,7 +24,7 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 
 def main():
   # pdb.set_trace()
-  with tf.device('/cpu:0'):
+  # with tf.device('/gpu:0'):
     dataset = input_data.read_data_sets(None, one_hot=True, reshape=False)
 
     x = tf.placeholder(tf.float32, [None, INPUT_LAYER_SIZE])

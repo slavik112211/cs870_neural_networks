@@ -5,6 +5,7 @@ import random
 import pdb
 import os
 from shutil import copyfile
+import shutil
 
 from training_categories import get_trains_filters
 
@@ -15,19 +16,29 @@ INPUT_LAYER_SIZE = IMAGE_WIDTH*IMAGE_HEIGHT # 115200
 # OUTPUT_LAYER_SIZE = len(categories_list)    # 88
 OUTPUT_LAYER_SIZE = 10 # a,b,c,d,e,f,g,h,i,j
 
-def load_trains_dataset():
+def load_trains_dataset(with_noise=True):
   image_labels_dict = {}
   with open('./image_labels_dict', 'rb') as image_labels_file:
     image_labels_dict = cPickle.load(image_labels_file)
 
-  images_dir = './trains_images_preprocessed/'
-  total_labelled_images = len(image_labels_dict) # 1436
-  test_set_size = int(total_labelled_images / 6) # 239
-  train_set_size = total_labelled_images - test_set_size  # 1197
-  test_set_filenames = random.sample(image_labels_dict, test_set_size)
+  pdb.set_trace()
+  images_dir = './trains_images_noise/' if with_noise else './trains_images_preprocessed/'
+  img_filenames = [ filename for filename in os.listdir(images_dir) if filename.endswith('.jpg') ]
+  total_labelled_images = len(img_filenames) # 14360 with noise / 1436 without noise
+  test_set_size = int(total_labelled_images / 6) # 2393 / 239
+  train_set_size = total_labelled_images - test_set_size  # 11967 / 1197
+  test_set_filenames = random.sample(img_filenames, test_set_size)
 
   training_data = []; test_data = []
-  for image_file, categories_map in image_labels_dict.iteritems():
+  random.shuffle(img_filenames)
+  for index, image_file in enumerate(img_filenames):
+    if index % 10 == 0: print str(index) + " / " + str(len(img_filenames))
+
+    if(with_noise):
+      general_filename = image_file.split('.')[0][:-2] + "." + image_file.split('.')[1]
+      categories_map = image_labels_dict[general_filename]
+    else:
+      categories_map = image_labels_dict[image_file]
 
     image_matrix = misc.imread(images_dir+image_file)
     image_matrix = np.reshape(image_matrix, (IMAGE_WIDTH*IMAGE_HEIGHT, 1))
@@ -43,7 +54,7 @@ def load_trains_dataset():
     else:
       test_data.append((image_matrix, category_id))
 
-  pdb.set_trace()
+
   return (training_data, test_data)
 
 def gauss_noise(image):
@@ -66,7 +77,7 @@ def apply_noise():
     copyfile(complete_filename, os.path.join(images_dir, "noise", new_file_name))
 
     image_matrix = misc.imread(complete_filename)
-    image_matrix = image_matrix.astype(np.float32)
+    # image_matrix = image_matrix.astype(np.float32)
     for i in xrange(1, 10):
       noisy_image_matrix = gauss_noise(image_matrix)
       new_file_name = image_file.split('.')[0] + "_" + str(i) + "." + image_file.split('.')[1]
@@ -184,3 +195,13 @@ def get_category_id(category_name):
   elif 'j15' in category_name: category_id = 87
 
   return category_id
+
+
+def move_unclassified():
+  unclassified_files = []
+  with open('./unclassified', 'rb') as unclassified:
+    unclassified_files = cPickle.load(unclassified)
+
+  images_dir = './trains_images_preprocessed/'
+  for index, image_file in enumerate(unclassified_files):
+    shutil.move(images_dir+image_file, images_dir+"unclassified/"+image_file)

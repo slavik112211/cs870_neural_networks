@@ -13,7 +13,7 @@ from training_categories import get_trains_filters
 # python -m pdb train_position_linear_classifier.py
 def main():
   print 'Started: ' + str(datetime.now())
-  filelist = sorted(glob.glob('./trains_images_dataset/preprocessed/*.jpg'))
+  filelist = sorted(glob.glob('./trains_images_preprocessed/*.jpg'))
   label_images_dict = dict()
   trains_filters = get_trains_filters()
 
@@ -59,7 +59,7 @@ def create_unclassified_images_category(filelist, image_labels_dict):
   return image_labels_dict
 
 def copy_categorized_images(image_labels_dict):
-  images_dir = './trains_images_dataset/preprocessed/'
+  images_dir = './trains_images_preprocessed/'
   for image_file, categories_map in image_labels_dict.iteritems():
     # take the category that has lowest luminosity value, {30000=>'a1', 31000=>'a2'} should return 'a1'
     category = categories_map[min(categories_map)]

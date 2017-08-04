@@ -35,6 +35,16 @@ References:
     - textbooks: "Pattern Recognition and Machine Learning" -
                  Christopher M. Bishop, section 4.3.2
 
+https://stats.stackexchange.com/questions/223799/different-definitions-of-the-cross-entropy-loss-function/224491#224491
+https://stats.stackexchange.com/questions/198038/cross-entropy-or-log-likelihood-in-output-layer
+https://www.quora.com/What-are-the-differences-between-maximum-likelihood-and-cross-entropy-as-a-loss-function
+https://stats.stackexchange.com/questions/141087/i-am-wondering-why-we-use-negative-log-likelihood-sometimes
+http://www.iro.umontreal.ca/~pift6266/H10/notes/gradient.html
+
+neuralnetworksanddeeplearning.com/chap4.html - end of chapter, how's CNN's better than 1-hidden layer networks
+
+http://www.deeplearningbook.org/
+
 """
 
 from __future__ import print_function
@@ -59,6 +69,12 @@ import pdb
 
 IMAGE_WIDTH = 480
 IMAGE_HEIGHT = 240
+
+from training_categories import get_trains_filters
+categories_list = sorted(get_trains_filters().keys())
+INPUT_LAYER_SIZE = IMAGE_WIDTH*IMAGE_HEIGHT # 115200
+OUTPUT_LAYER_SIZE = len(categories_list)    # 88
+
 
 class LogisticRegression(object):
     """Multi-class Logistic Regression Class
@@ -197,6 +213,8 @@ def load_trains_dataset(with_noise=True):
   test_set_filenames = random.sample(img_filenames, test_set_size)
 
   training_data = []; training_labels = []; test_data = []; test_labels = [];
+  random.shuffle(img_filenames)
+
   for index, image_file in enumerate(img_filenames):
     if index % 10 == 0: print(str(index) + " / " + str(len(img_filenames)))
 
@@ -214,7 +232,7 @@ def load_trains_dataset(with_noise=True):
     # pick category with lowest luminosity value: {30000=>'a1', 31000=>'a2'}
     category = categories_map[min(categories_map)]
     # category_id = categories_list.index(category)
-    category_id = trains_dataset.get_united_category_id(category)
+    category_id = trains_dataset.get_category_id(category)
 
     if image_file not in test_set_filenames:
       training_data.append(image_matrix)
@@ -223,15 +241,16 @@ def load_trains_dataset(with_noise=True):
       test_data.append(image_matrix)
       test_labels.append(category_id)
 
+  # pdb.set_trace()
   training_data = numpy.array(training_data)
   training_labels = numpy.array(training_labels)
   test_data = numpy.array(test_data)
   test_labels = numpy.array(test_labels)
 
-  perm = numpy.arange(len(training_data))
-  numpy.random.shuffle(perm)
-  training_data = training_data[perm]
-  training_labels = training_labels[perm]
+  # perm = numpy.arange(len(training_data))
+  # numpy.random.shuffle(perm)
+  # training_data = training_data[perm]
+  # training_labels = training_labels[perm]
 
   dataset = ((training_data, training_labels), (test_data, test_labels))
 
@@ -310,12 +329,13 @@ def shared_dataset(data_xy, borrow=True):
     variable) would lead to a large decrease in performance.
     """
     data_x, data_y = data_xy
-    shared_x = theano.shared(numpy.asarray(data_x,
+
+    shared_x = theano.tensor._shared(numpy.asarray(data_x,
                                            dtype=theano.config.floatX),
-                             borrow=borrow)
-    shared_y = theano.shared(numpy.asarray(data_y,
+                             borrow=True)
+    shared_y = theano.tensor._shared(numpy.asarray(data_y,
                                            dtype=theano.config.floatX),
-                             borrow=borrow)
+                             borrow=True)
     # When storing data on the GPU it has to be stored as floats
     # therefore we will store the labels as ``floatX`` as well
     # (``shared_y`` does exactly that). But during our computations
@@ -326,7 +346,7 @@ def shared_dataset(data_xy, borrow=True):
     return shared_x, T.cast(shared_y, 'int32')
 
 
-def sgd_optimization_mnist(learning_rate=0.14, n_epochs=500,
+def sgd_optimization_mnist(learning_rate=0.14, n_epochs=600,
                            dataset='./mnist/mnist.pkl.gz',
                            batch_size=10):
     """
@@ -348,7 +368,7 @@ def sgd_optimization_mnist(learning_rate=0.14, n_epochs=500,
 
     """
     # datasets = load_data(dataset)
-    datasets = load_trains_dataset(False)
+    datasets = load_trains_dataset(True)
     # pdb.set_trace()
 
     train_set_x, train_set_y = datasets[0]
@@ -376,7 +396,7 @@ def sgd_optimization_mnist(learning_rate=0.14, n_epochs=500,
     # construct the logistic regression class
     # Each MNIST image has size 28*28
     # classifier = LogisticRegression(input=x, n_in=28 * 28, n_out=10)
-    classifier = LogisticRegression(input=x, n_in=IMAGE_WIDTH * IMAGE_HEIGHT, n_out=10)
+    classifier = LogisticRegression(input=x, n_in=IMAGE_WIDTH * IMAGE_HEIGHT, n_out=OUTPUT_LAYER_SIZE)
 
     # the cost we minimize during training is the negative log likelihood of
     # the model in symbolic format
@@ -442,7 +462,7 @@ def sgd_optimization_mnist(learning_rate=0.14, n_epochs=500,
                                   # on the validation set; in this case we
                                   # check every epoch
 
-    validation_frequency = 1000 # verify test dataset accuracy after each 5 epochs
+    validation_frequency = 4800 # verify test dataset accuracy after 4800*10 trained images; 48000 / 11967 (4 epochs)
 
     # best_validation_loss = numpy.inf
     test_score = 0.

@@ -1,0 +1,8 @@
+[global]
+cuda.root=~/cuda/
+device = gpu
+floatX = float32
+force_device=True
+
+[lib]
+cnmem = 0.57

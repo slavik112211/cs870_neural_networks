@@ -35,6 +35,12 @@ class DataSet(object):
         self._epochs_completed = 0
         self._index_in_epoch = 0
 
+        # pdb.set_trace()
+        perm = numpy.arange(self._num_examples)
+        numpy.random.shuffle(perm)
+        self._images = self._images[perm]
+        self._labels = self._labels[perm]
+
     @property
     def images(self):
         return self._images
@@ -78,7 +84,7 @@ def read_data_sets(train_dir, fake_data=False, one_hot=False,
                         dtype=dtypes.float64, reshape=True,
                         validation_size=5000):
     # pdb.set_trace()
-    training_data, test_data = trains_dataset.load_trains_dataset()
+    training_data, test_data = trains_dataset.load_trains_dataset(True)
 
     training_images = []
     training_labels = []
