@@ -1,0 +1,822 @@
+epoch: 1
+epoch: 2
+epoch 2, minibatch 804/1196, test error of best model 94.8535564854 %, cost 4.75584793091
+epoch 2, minibatch 804/1196, validation error 95.1464435146 %
+epoch: 3
+epoch: 4
+epoch 4, minibatch 412/1196, test error of best model 94.769874477 %, cost 4.69522476196
+epoch 4, minibatch 412/1196, validation error 94.8953974895 %
+epoch: 5
+epoch: 6
+epoch 6, minibatch 20/1196, test error of best model 95.1882845188 %, cost 4.22121524811
+epoch 6, minibatch 20/1196, validation error 94.6443514644 %
+epoch: 7
+epoch 7, minibatch 824/1196, test error of best model 94.7280334728 %, cost 4.30751132965
+epoch 7, minibatch 824/1196, validation error 94.9372384937 %
+epoch: 8
+epoch: 9
+epoch 9, minibatch 432/1196, test error of best model 94.8535564854 %, cost 3.90635681152
+epoch 9, minibatch 432/1196, validation error 95.1464435146 %
+epoch: 10
+epoch: 11
+epoch 11, minibatch 40/1196, test error of best model 94.4769874477 %, cost 3.81299734116
+epoch 11, minibatch 40/1196, validation error 93.7656903766 %
+epoch: 12
+epoch 12, minibatch 844/1196, test error of best model 94.9372384937 %, cost 4.44384241104
+epoch 12, minibatch 844/1196, validation error 94.5606694561 %
+epoch: 13
+epoch: 14
+epoch 14, minibatch 452/1196, test error of best model 93.0962343096 %, cost 4.10769844055
+epoch 14, minibatch 452/1196, validation error 93.5564853556 %
+epoch: 15
+epoch: 16
+epoch 16, minibatch 60/1196, test error of best model 94.1841004184 %, cost 4.97316217422
+epoch 16, minibatch 60/1196, validation error 94.4351464435 %
+epoch: 17
+epoch 17, minibatch 864/1196, test error of best model 94.8535564854 %, cost 4.11849689484
+epoch 17, minibatch 864/1196, validation error 95.1464435146 %
+epoch: 18
+epoch: 19
+epoch 19, minibatch 472/1196, test error of best model 97.8661087866 %, cost 4.54031515121
+epoch 19, minibatch 472/1196, validation error 97.6150627615 %
+epoch: 20
+epoch: 21
+epoch 21, minibatch 80/1196, test error of best model 96.1506276151 %, cost 4.45254087448
+epoch 21, minibatch 80/1196, validation error 95.6485355649 %
+epoch: 22
+epoch 22, minibatch 884/1196, test error of best model 95.1882845188 %, cost 4.6222577095
+epoch 22, minibatch 884/1196, validation error 94.6443514644 %
+epoch: 23
+epoch: 24
+epoch 24, minibatch 492/1196, test error of best model 95.4393305439 %, cost 4.21128034592
+epoch 24, minibatch 492/1196, validation error 96.2761506276 %
+epoch: 25
+epoch: 26
+epoch 26, minibatch 100/1196, test error of best model 95.1882845188 %, cost 4.70833873749
+epoch 26, minibatch 100/1196, validation error 94.6443514644 %
+epoch: 27
+epoch 27, minibatch 904/1196, test error of best model 95.1882845188 %, cost 4.84874534607
+epoch 27, minibatch 904/1196, validation error 94.6443514644 %
+epoch: 28
+epoch: 29
+epoch 29, minibatch 512/1196, test error of best model 97.9079497908 %, cost 4.48193120956
+epoch 29, minibatch 512/1196, validation error 97.9079497908 %
+epoch: 30
+epoch: 31
+epoch 31, minibatch 120/1196, test error of best model 97.6987447699 %, cost 4.74216938019
+epoch 31, minibatch 120/1196, validation error 97.6569037657 %
+epoch: 32
+epoch 32, minibatch 924/1196, test error of best model 93.4728033473 %, cost 4.48645114899
+epoch 32, minibatch 924/1196, validation error 94.2677824268 %
+epoch: 33
+epoch: 34
+epoch 34, minibatch 532/1196, test error of best model 98.1589958159 %, cost 4.35778617859
+epoch 34, minibatch 532/1196, validation error 98.4518828452 %
+epoch: 35
+epoch: 36
+epoch 36, minibatch 140/1196, test error of best model 95.1882845188 %, cost 4.16774654388
+epoch 36, minibatch 140/1196, validation error 94.6443514644 %
+epoch: 37
+epoch 37, minibatch 944/1196, test error of best model 97.2384937238 %, cost 4.54328346252
+epoch 37, minibatch 944/1196, validation error 96.8619246862 %
+epoch: 38
+epoch: 39
+epoch 39, minibatch 552/1196, test error of best model 98.4518828452 %, cost 4.35086536407
+epoch 39, minibatch 552/1196, validation error 98.8284518828 %
+epoch: 40
+epoch: 41
+epoch 41, minibatch 160/1196, test error of best model 95.1882845188 %, cost 5.03227710724
+epoch 41, minibatch 160/1196, validation error 94.6443514644 %
+epoch: 42
+epoch 42, minibatch 964/1196, test error of best model 95.8577405858 %, cost 4.80612039566
+epoch 42, minibatch 964/1196, validation error 96.1506276151 %
+epoch: 43
+epoch: 44
+epoch 44, minibatch 572/1196, test error of best model 97.4476987448 %, cost 4.72859144211
+epoch 44, minibatch 572/1196, validation error 97.6569037657 %
+epoch: 45
+epoch: 46
+epoch 46, minibatch 180/1196, test error of best model 95.4393305439 %, cost 4.83588314056
+epoch 46, minibatch 180/1196, validation error 96.2761506276 %
+epoch: 47
+epoch 47, minibatch 984/1196, test error of best model 95.1882845188 %, cost 4.24372720718
+epoch 47, minibatch 984/1196, validation error 94.6443514644 %
+epoch: 48
+epoch: 49
+epoch 49, minibatch 592/1196, test error of best model 94.8535564854 %, cost 4.26385641098
+epoch 49, minibatch 592/1196, validation error 95.1464435146 %
+epoch: 50
+epoch: 51
+epoch 51, minibatch 200/1196, test error of best model 95.1882845188 %, cost 4.54415941238
+epoch 51, minibatch 200/1196, validation error 94.6443514644 %
+epoch: 52
+epoch 52, minibatch 1004/1196, test error of best model 97.9079497908 %, cost 4.44430780411
+epoch 52, minibatch 1004/1196, validation error 97.8661087866 %
+epoch: 53
+epoch: 54
+epoch 54, minibatch 612/1196, test error of best model 97.2384937238 %, cost 4.67188882828
+epoch 54, minibatch 612/1196, validation error 96.8619246862 %
+epoch: 55
+epoch: 56
+epoch 56, minibatch 220/1196, test error of best model 92.7615062762 %, cost 4.03370904922
+epoch 56, minibatch 220/1196, validation error 93.0125523013 %
+epoch: 57
+epoch 57, minibatch 1024/1196, test error of best model 97.4476987448 %, cost 5.23856496811
+epoch 57, minibatch 1024/1196, validation error 97.6569037657 %
+epoch: 58
+epoch: 59
+epoch 59, minibatch 632/1196, test error of best model 98.1589958159 %, cost 4.42787075043
+epoch 59, minibatch 632/1196, validation error 98.4518828452 %
+epoch: 60
+epoch: 61
+epoch 61, minibatch 240/1196, test error of best model 96.9037656904 %, cost 4.57556676865
+epoch 61, minibatch 240/1196, validation error 97.6987447699 %
+epoch: 62
+epoch 62, minibatch 1044/1196, test error of best model 97.4476987448 %, cost 4.79888439178
+epoch 62, minibatch 1044/1196, validation error 97.6569037657 %
+epoch: 63
+epoch: 64
+epoch 64, minibatch 652/1196, test error of best model 94.8535564854 %, cost 4.32445192337
+epoch 64, minibatch 652/1196, validation error 95.1464435146 %
+epoch: 65
+epoch: 66
+epoch 66, minibatch 260/1196, test error of best model 97.9916317992 %, cost 4.87510442734
+epoch 66, minibatch 260/1196, validation error 98.3682008368 %
+epoch: 67
+epoch 67, minibatch 1064/1196, test error of best model 96.4853556485 %, cost 4.22415399551
+epoch 67, minibatch 1064/1196, validation error 96.2343096234 %
+epoch: 68
+epoch: 69
+epoch 69, minibatch 672/1196, test error of best model 97.8661087866 %, cost 4.67126321793
+epoch 69, minibatch 672/1196, validation error 97.4476987448 %
+epoch: 70
+epoch: 71
+epoch 71, minibatch 280/1196, test error of best model 95.1882845188 %, cost 4.40721988678
+epoch 71, minibatch 280/1196, validation error 94.6443514644 %
+epoch: 72
+epoch 72, minibatch 1084/1196, test error of best model 94.3933054393 %, cost 4.02379894257
+epoch 72, minibatch 1084/1196, validation error 94.769874477 %
+epoch: 73
+epoch: 74
+epoch 74, minibatch 692/1196, test error of best model 95.4393305439 %, cost 4.38814926147
+epoch 74, minibatch 692/1196, validation error 96.2761506276 %
+epoch: 75
+epoch: 76
+epoch 76, minibatch 300/1196, test error of best model 96.4853556485 %, cost 4.76229381561
+epoch 76, minibatch 300/1196, validation error 96.2343096234 %
+epoch: 77
+epoch 77, minibatch 1104/1196, test error of best model 96.9037656904 %, cost 4.37807607651
+epoch 77, minibatch 1104/1196, validation error 97.6987447699 %
+epoch: 78
+epoch: 79
+epoch 79, minibatch 712/1196, test error of best model 97.4476987448 %, cost 5.24375104904
+epoch 79, minibatch 712/1196, validation error 97.6569037657 %
+epoch: 80
+epoch: 81
+epoch 81, minibatch 320/1196, test error of best model 96.4853556485 %, cost 4.87425756454
+epoch 81, minibatch 320/1196, validation error 96.2343096234 %
+epoch: 82
+epoch 82, minibatch 1124/1196, test error of best model 95.8577405858 %, cost 4.8485789299
+epoch 82, minibatch 1124/1196, validation error 96.1506276151 %
+epoch: 83
+epoch: 84
+epoch 84, minibatch 732/1196, test error of best model 98.410041841 %, cost 3.88260769844
+epoch 84, minibatch 732/1196, validation error 98.1171548117 %
+epoch: 85
+epoch: 86
+epoch 86, minibatch 340/1196, test error of best model 95.8577405858 %, cost 4.68392801285
+epoch 86, minibatch 340/1196, validation error 96.1506276151 %
+epoch: 87
+epoch 87, minibatch 1144/1196, test error of best model 97.7824267782 %, cost 4.96822834015
+epoch 87, minibatch 1144/1196, validation error 97.8242677824 %
+epoch: 88
+epoch: 89
+epoch 89, minibatch 752/1196, test error of best model 97.2384937238 %, cost 4.16758966446
+epoch 89, minibatch 752/1196, validation error 96.8619246862 %
+epoch: 90
+epoch: 91
+epoch 91, minibatch 360/1196, test error of best model 94.8535564854 %, cost 4.65742921829
+epoch 91, minibatch 360/1196, validation error 95.1464435146 %
+epoch: 92
+epoch 92, minibatch 1164/1196, test error of best model 94.8535564854 %, cost 4.77082967758
+epoch 92, minibatch 1164/1196, validation error 95.1464435146 %
+epoch: 93
+epoch: 94
+epoch 94, minibatch 772/1196, test error of best model 95.1882845188 %, cost 4.22769784927
+epoch 94, minibatch 772/1196, validation error 94.6443514644 %
+epoch: 95
+epoch: 96
+epoch 96, minibatch 380/1196, test error of best model 97.5313807531 %, cost 4.73750209808
+epoch 96, minibatch 380/1196, validation error 97.1129707113 %
+epoch: 97
+epoch 97, minibatch 1184/1196, test error of best model 98.2845188285 %, cost 4.50875520706
+epoch 97, minibatch 1184/1196, validation error 97.7824267782 %
+epoch: 98
+epoch: 99
+epoch 99, minibatch 792/1196, test error of best model 95.1046025105 %, cost 4.69440221786
+epoch 99, minibatch 792/1196, validation error 94.8953974895 %
+epoch: 100
+epoch: 101
+epoch 101, minibatch 400/1196, test error of best model 95.1882845188 %, cost 4.77789354324
+epoch 101, minibatch 400/1196, validation error 94.6443514644 %
+epoch: 102
+epoch: 103
+epoch 103, minibatch 8/1196, test error of best model 98.2845188285 %, cost 5.00581645966
+epoch 103, minibatch 8/1196, validation error 97.7824267782 %
+epoch: 104
+epoch 104, minibatch 812/1196, test error of best model 98.2426778243 %, cost 4.85645055771
+epoch 104, minibatch 812/1196, validation error 98.7029288703 %
+epoch: 105
+epoch: 106
+epoch 106, minibatch 420/1196, test error of best model 94.8535564854 %, cost 4.33770561218
+epoch 106, minibatch 420/1196, validation error 95.1464435146 %
+epoch: 107
+epoch: 108
+epoch 108, minibatch 28/1196, test error of best model 96.4853556485 %, cost 4.61788463593
+epoch 108, minibatch 28/1196, validation error 96.2343096234 %
+epoch: 109
+epoch 109, minibatch 832/1196, test error of best model 97.7824267782 %, cost 4.96108722687
+epoch 109, minibatch 832/1196, validation error 97.8242677824 %
+epoch: 110
+epoch: 111
+epoch 111, minibatch 440/1196, test error of best model 95.4393305439 %, cost 4.83260345459
+epoch 111, minibatch 440/1196, validation error 96.2761506276 %
+epoch: 112
+epoch: 113
+epoch 113, minibatch 48/1196, test error of best model 96.4853556485 %, cost 4.48279857635
+epoch 113, minibatch 48/1196, validation error 96.2343096234 %
+epoch: 114
+epoch 114, minibatch 852/1196, test error of best model 97.9916317992 %, cost 4.86763715744
+epoch 114, minibatch 852/1196, validation error 98.3682008368 %
+epoch: 115
+epoch: 116
+epoch 116, minibatch 460/1196, test error of best model 95.1882845188 %, cost 4.25027418137
+epoch 116, minibatch 460/1196, validation error 94.6443514644 %
+epoch: 117
+epoch: 118
+epoch 118, minibatch 68/1196, test error of best model 94.8535564854 %, cost 4.51064634323
+epoch 118, minibatch 68/1196, validation error 95.1464435146 %
+epoch: 119
+epoch 119, minibatch 872/1196, test error of best model 97.8661087866 %, cost 3.694242239
+epoch 119, minibatch 872/1196, validation error 97.4476987448 %
+epoch: 120
+epoch: 121
+epoch 121, minibatch 480/1196, test error of best model 94.8535564854 %, cost 4.11863231659
+epoch 121, minibatch 480/1196, validation error 95.1464435146 %
+epoch: 122
+epoch: 123
+epoch 123, minibatch 88/1196, test error of best model 95.8158995816 %, cost 4.38310241699
+epoch 123, minibatch 88/1196, validation error 95.9832635983 %
+epoch: 124
+epoch 124, minibatch 892/1196, test error of best model 97.2384937238 %, cost 4.33065319061
+epoch 124, minibatch 892/1196, validation error 96.8619246862 %
+epoch: 125
+epoch: 126
+epoch 126, minibatch 500/1196, test error of best model 95.8577405858 %, cost 4.73470544815
+epoch 126, minibatch 500/1196, validation error 96.1506276151 %
+epoch: 127
+epoch: 128
+epoch 128, minibatch 108/1196, test error of best model 94.8535564854 %, cost 5.20888614655
+epoch 128, minibatch 108/1196, validation error 95.1464435146 %
+epoch: 129
+epoch 129, minibatch 912/1196, test error of best model 96.9037656904 %, cost 4.63566303253
+epoch 129, minibatch 912/1196, validation error 97.6987447699 %
+epoch: 130
+epoch: 131
+epoch 131, minibatch 520/1196, test error of best model 98.1589958159 %, cost 5.48511266708
+epoch 131, minibatch 520/1196, validation error 98.4518828452 %
+epoch: 132
+epoch: 133
+epoch 133, minibatch 128/1196, test error of best model 98.0334728033 %, cost 4.63047409058
+epoch 133, minibatch 128/1196, validation error 97.949790795 %
+epoch: 134
+epoch 134, minibatch 932/1196, test error of best model 98.0334728033 %, cost 4.38352394104
+epoch 134, minibatch 932/1196, validation error 97.949790795 %
+epoch: 135
+epoch: 136
+epoch 136, minibatch 540/1196, test error of best model 95.4393305439 %, cost 4.10417985916
+epoch 136, minibatch 540/1196, validation error 96.2761506276 %
+epoch: 137
+epoch: 138
+epoch 138, minibatch 148/1196, test error of best model 94.8535564854 %, cost 4.03120231628
+epoch 138, minibatch 148/1196, validation error 95.1464435146 %
+epoch: 139
+epoch 139, minibatch 952/1196, test error of best model 95.1882845188 %, cost 4.05010080338
+epoch 139, minibatch 952/1196, validation error 94.6443514644 %
+epoch: 140
+epoch: 141
+epoch 141, minibatch 560/1196, test error of best model 95.8577405858 %, cost 4.46440601349
+epoch 141, minibatch 560/1196, validation error 96.1506276151 %
+epoch: 142
+epoch: 143
+epoch 143, minibatch 168/1196, test error of best model 98.4937238494 %, cost 4.74564981461
+epoch 143, minibatch 168/1196, validation error 98.6610878661 %
+epoch: 144
+epoch 144, minibatch 972/1196, test error of best model 97.2384937238 %, cost 4.98792886734
+epoch 144, minibatch 972/1196, validation error 96.8619246862 %
+epoch: 145
+epoch: 146
+epoch 146, minibatch 580/1196, test error of best model 95.4393305439 %, cost 4.52207231522
+epoch 146, minibatch 580/1196, validation error 96.2761506276 %
+epoch: 147
+epoch: 148
+epoch 148, minibatch 188/1196, test error of best model 98.4937238494 %, cost 4.01631355286
+epoch 148, minibatch 188/1196, validation error 98.7447698745 %
+epoch: 149
+epoch 149, minibatch 992/1196, test error of best model 94.8535564854 %, cost 4.1436214447
+epoch 149, minibatch 992/1196, validation error 95.1464435146 %
+epoch: 150
+epoch: 151
+epoch 151, minibatch 600/1196, test error of best model 96.4853556485 %, cost 4.33730220795
+epoch 151, minibatch 600/1196, validation error 96.2343096234 %
+epoch: 152
+epoch: 153
+epoch 153, minibatch 208/1196, test error of best model 97.9916317992 %, cost 4.47815227509
+epoch 153, minibatch 208/1196, validation error 98.3682008368 %
+epoch: 154
+epoch 154, minibatch 1012/1196, test error of best model 98.0334728033 %, cost 4.49623394012
+epoch 154, minibatch 1012/1196, validation error 98.1171548117 %
+epoch: 155
+epoch: 156
+epoch 156, minibatch 620/1196, test error of best model 97.4476987448 %, cost 4.72445201874
+epoch 156, minibatch 620/1196, validation error 97.6569037657 %
+epoch: 157
+epoch: 158
+epoch 158, minibatch 228/1196, test error of best model 95.1882845188 %, cost 4.68832111359
+epoch 158, minibatch 228/1196, validation error 94.6443514644 %
+epoch: 159
+epoch 159, minibatch 1032/1196, test error of best model 94.8535564854 %, cost 4.3812828064
+epoch 159, minibatch 1032/1196, validation error 95.1464435146 %
+epoch: 160
+epoch: 161
+epoch 161, minibatch 640/1196, test error of best model 94.8535564854 %, cost 4.30168056488
+epoch 161, minibatch 640/1196, validation error 95.1464435146 %
+epoch: 162
+epoch: 163
+epoch 163, minibatch 248/1196, test error of best model 95.1882845188 %, cost 4.28593015671
+epoch 163, minibatch 248/1196, validation error 94.6443514644 %
+epoch: 164
+epoch 164, minibatch 1052/1196, test error of best model 98.2845188285 %, cost 4.58347511292
+epoch 164, minibatch 1052/1196, validation error 97.7824267782 %
+epoch: 165
+epoch: 166
+epoch 166, minibatch 660/1196, test error of best model 98.0334728033 %, cost 4.72523212433
+epoch 166, minibatch 660/1196, validation error 97.949790795 %
+epoch: 167
+epoch: 168
+epoch 168, minibatch 268/1196, test error of best model 95.8577405858 %, cost 4.75068902969
+epoch 168, minibatch 268/1196, validation error 96.1506276151 %
+epoch: 169
+epoch 169, minibatch 1072/1196, test error of best model 97.2384937238 %, cost 4.48649597168
+epoch 169, minibatch 1072/1196, validation error 96.8619246862 %
+epoch: 170
+epoch: 171
+epoch 171, minibatch 680/1196, test error of best model 97.9079497908 %, cost 4.1914806366
+epoch 171, minibatch 680/1196, validation error 97.9079497908 %
+epoch: 172
+epoch: 173
+epoch 173, minibatch 288/1196, test error of best model 94.8535564854 %, cost 4.39923000336
+epoch 173, minibatch 288/1196, validation error 95.1464435146 %
+epoch: 174
+epoch 174, minibatch 1092/1196, test error of best model 94.8535564854 %, cost 4.48559379578
+epoch 174, minibatch 1092/1196, validation error 95.1464435146 %
+epoch: 175
+epoch: 176
+epoch 176, minibatch 700/1196, test error of best model 98.4518828452 %, cost 5.24610042572
+epoch 176, minibatch 700/1196, validation error 98.6610878661 %
+epoch: 177
+epoch: 178
+epoch 178, minibatch 308/1196, test error of best model 98.410041841 %, cost 5.04363107681
+epoch 178, minibatch 308/1196, validation error 98.1171548117 %
+epoch: 179
+epoch 179, minibatch 1112/1196, test error of best model 95.4393305439 %, cost 4.40484189987
+epoch 179, minibatch 1112/1196, validation error 96.2761506276 %
+epoch: 180
+epoch: 181
+epoch 181, minibatch 720/1196, test error of best model 95.1882845188 %, cost 4.0817117691
+epoch 181, minibatch 720/1196, validation error 94.6443514644 %
+epoch: 182
+epoch: 183
+epoch 183, minibatch 328/1196, test error of best model 94.8535564854 %, cost 4.55302906036
+epoch 183, minibatch 328/1196, validation error 95.1464435146 %
+epoch: 184
+epoch 184, minibatch 1132/1196, test error of best model 95.4393305439 %, cost 3.79743242264
+epoch 184, minibatch 1132/1196, validation error 96.2761506276 %
+epoch: 185
+epoch: 186
+epoch 186, minibatch 740/1196, test error of best model 97.9079497908 %, cost 4.49732398987
+epoch 186, minibatch 740/1196, validation error 97.9079497908 %
+epoch: 187
+epoch: 188
+epoch 188, minibatch 348/1196, test error of best model 97.2384937238 %, cost 3.97705316544
+epoch 188, minibatch 348/1196, validation error 96.8619246862 %
+epoch: 189
+epoch 189, minibatch 1152/1196, test error of best model 94.8535564854 %, cost 4.47794866562
+epoch 189, minibatch 1152/1196, validation error 95.1464435146 %
+epoch: 190
+epoch: 191
+epoch 191, minibatch 760/1196, test error of best model 97.8661087866 %, cost 5.09160137177
+epoch 191, minibatch 760/1196, validation error 97.4476987448 %
+epoch: 192
+epoch: 193
+epoch 193, minibatch 368/1196, test error of best model 91.2970711297 %, cost 4.53128528595
+epoch 193, minibatch 368/1196, validation error 92.4267782427 %
+epoch: 194
+epoch 194, minibatch 1172/1196, test error of best model 98.2845188285 %, cost 5.09665107727
+epoch 194, minibatch 1172/1196, validation error 98.7029288703 %
+epoch: 195
+epoch: 196
+epoch 196, minibatch 780/1196, test error of best model 95.1882845188 %, cost 4.29813194275
+epoch 196, minibatch 780/1196, validation error 94.6443514644 %
+epoch: 197
+epoch: 198
+epoch 198, minibatch 388/1196, test error of best model 96.4853556485 %, cost 4.35089015961
+epoch 198, minibatch 388/1196, validation error 96.2343096234 %
+epoch: 199
+epoch 199, minibatch 1192/1196, test error of best model 97.7824267782 %, cost 4.29856204987
+epoch 199, minibatch 1192/1196, validation error 97.8242677824 %
+epoch: 200
+epoch: 201
+epoch 201, minibatch 800/1196, test error of best model 97.2384937238 %, cost 4.69243526459
+epoch 201, minibatch 800/1196, validation error 96.8619246862 %
+epoch: 202
+epoch: 203
+epoch 203, minibatch 408/1196, test error of best model 98.4518828452 %, cost 4.78946828842
+epoch 203, minibatch 408/1196, validation error 98.8284518828 %
+epoch: 204
+epoch: 205
+epoch 205, minibatch 16/1196, test error of best model 95.8577405858 %, cost 3.96605920792
+epoch 205, minibatch 16/1196, validation error 96.1506276151 %
+epoch: 206
+epoch 206, minibatch 820/1196, test error of best model 98.3682008368 %, cost 4.61775255203
+epoch 206, minibatch 820/1196, validation error 98.6610878661 %
+epoch: 207
+epoch: 208
+epoch 208, minibatch 428/1196, test error of best model 97.2384937238 %, cost 4.31790494919
+epoch 208, minibatch 428/1196, validation error 96.8619246862 %
+epoch: 209
+epoch: 210
+epoch 210, minibatch 36/1196, test error of best model 98.1589958159 %, cost 4.66788959503
+epoch 210, minibatch 36/1196, validation error 98.4518828452 %
+epoch: 211
+epoch 211, minibatch 840/1196, test error of best model 95.4393305439 %, cost 4.16084289551
+epoch 211, minibatch 840/1196, validation error 96.2761506276 %
+epoch: 212
+epoch: 213
+epoch 213, minibatch 448/1196, test error of best model 95.4393305439 %, cost 4.18843460083
+epoch 213, minibatch 448/1196, validation error 96.2761506276 %
+epoch: 214
+epoch: 215
+epoch 215, minibatch 56/1196, test error of best model 96.4853556485 %, cost 4.45868349075
+epoch 215, minibatch 56/1196, validation error 96.2343096234 %
+epoch: 216
+epoch 216, minibatch 860/1196, test error of best model 97.489539749 %, cost 4.35143136978
+epoch 216, minibatch 860/1196, validation error 97.7824267782 %
+epoch: 217
+epoch: 218
+epoch 218, minibatch 468/1196, test error of best model 96.4853556485 %, cost 4.48582410812
+epoch 218, minibatch 468/1196, validation error 96.2343096234 %
+epoch: 219
+epoch: 220
+epoch 220, minibatch 76/1196, test error of best model 98.4518828452 %, cost 4.23283576965
+epoch 220, minibatch 76/1196, validation error 98.6610878661 %
+epoch: 221
+epoch 221, minibatch 880/1196, test error of best model 97.9079497908 %, cost 3.97315478325
+epoch 221, minibatch 880/1196, validation error 97.8661087866 %
+epoch: 222
+epoch: 223
+epoch 223, minibatch 488/1196, test error of best model 95.1882845188 %, cost 3.88196849823
+epoch 223, minibatch 488/1196, validation error 96.2343096234 %
+epoch: 224
+epoch: 225
+epoch 225, minibatch 96/1196, test error of best model 94.4769874477 %, cost 4.21739959717
+epoch 225, minibatch 96/1196, validation error 95.7322175732 %
+epoch: 226
+epoch 226, minibatch 900/1196, test error of best model 96.4853556485 %, cost 3.85550999641
+epoch 226, minibatch 900/1196, validation error 96.2343096234 %
+epoch: 227
+epoch: 228
+epoch 228, minibatch 508/1196, test error of best model 95.1882845188 %, cost 4.50767660141
+epoch 228, minibatch 508/1196, validation error 94.6443514644 %
+epoch: 229
+epoch: 230
+epoch 230, minibatch 116/1196, test error of best model 95.8577405858 %, cost 4.04968929291
+epoch 230, minibatch 116/1196, validation error 96.1506276151 %
+epoch: 231
+epoch 231, minibatch 920/1196, test error of best model 98.0334728033 %, cost 4.20517444611
+epoch 231, minibatch 920/1196, validation error 98.1171548117 %
+epoch: 232
+epoch: 233
+epoch 233, minibatch 528/1196, test error of best model 95.8577405858 %, cost 4.47272872925
+epoch 233, minibatch 528/1196, validation error 96.1506276151 %
+epoch: 234
+epoch: 235
+epoch 235, minibatch 136/1196, test error of best model 94.8535564854 %, cost 4.59957313538
+epoch 235, minibatch 136/1196, validation error 95.1464435146 %
+epoch: 236
+epoch 236, minibatch 940/1196, test error of best model 95.1882845188 %, cost 4.28470611572
+epoch 236, minibatch 940/1196, validation error 94.6443514644 %
+epoch: 237
+epoch: 238
+epoch 238, minibatch 548/1196, test error of best model 95.8577405858 %, cost 4.76969575882
+epoch 238, minibatch 548/1196, validation error 96.1506276151 %
+epoch: 239
+epoch: 240
+epoch 240, minibatch 156/1196, test error of best model 95.1882845188 %, cost 4.45923233032
+epoch 240, minibatch 156/1196, validation error 94.6443514644 %
+epoch: 241
+epoch 241, minibatch 960/1196, test error of best model 95.4393305439 %, cost 4.60857534409
+epoch 241, minibatch 960/1196, validation error 96.2761506276 %
+epoch: 242
+epoch: 243
+epoch 243, minibatch 568/1196, test error of best model 96.4853556485 %, cost 4.03184509277
+epoch 243, minibatch 568/1196, validation error 96.2343096234 %
+epoch: 244
+epoch: 245
+epoch 245, minibatch 176/1196, test error of best model 98.1589958159 %, cost 4.22776937485
+epoch 245, minibatch 176/1196, validation error 98.4518828452 %
+epoch: 246
+epoch 246, minibatch 980/1196, test error of best model 95.8577405858 %, cost 3.62620663643
+epoch 246, minibatch 980/1196, validation error 96.1506276151 %
+epoch: 247
+epoch: 248
+epoch 248, minibatch 588/1196, test error of best model 95.4393305439 %, cost 4.62659168243
+epoch 248, minibatch 588/1196, validation error 96.2761506276 %
+epoch: 249
+epoch: 250
+epoch 250, minibatch 196/1196, test error of best model 96.4853556485 %, cost 4.69879436493
+epoch 250, minibatch 196/1196, validation error 96.2343096234 %
+epoch: 251
+epoch 251, minibatch 1000/1196, test error of best model 97.4058577406 %, cost 4.24712514877
+epoch 251, minibatch 1000/1196, validation error 97.0292887029 %
+epoch: 252
+epoch: 253
+epoch 253, minibatch 608/1196, test error of best model 92.6778242678 %, cost 4.65426063538
+epoch 253, minibatch 608/1196, validation error 92.5941422594 %
+epoch: 254
+epoch: 255
+epoch 255, minibatch 216/1196, test error of best model 97.4476987448 %, cost 4.06327390671
+epoch 255, minibatch 216/1196, validation error 97.6569037657 %
+epoch: 256
+epoch 256, minibatch 1020/1196, test error of best model 95.1882845188 %, cost 4.70467853546
+epoch 256, minibatch 1020/1196, validation error 94.6443514644 %
+epoch: 257
+epoch: 258
+epoch 258, minibatch 628/1196, test error of best model 95.4393305439 %, cost 4.1192741394
+epoch 258, minibatch 628/1196, validation error 96.2761506276 %
+epoch: 259
+epoch: 260
+epoch 260, minibatch 236/1196, test error of best model 97.9079497908 %, cost 4.97091293335
+epoch 260, minibatch 236/1196, validation error 97.9079497908 %
+epoch: 261
+epoch 261, minibatch 1040/1196, test error of best model 98.0334728033 %, cost 4.04155778885
+epoch 261, minibatch 1040/1196, validation error 97.949790795 %
+epoch: 262
+epoch: 263
+epoch 263, minibatch 648/1196, test error of best model 98.8284518828 %, cost 4.66817045212
+epoch 263, minibatch 648/1196, validation error 98.9958158996 %
+epoch: 264
+epoch: 265
+epoch 265, minibatch 256/1196, test error of best model 95.4393305439 %, cost 4.34521436691
+epoch 265, minibatch 256/1196, validation error 96.2761506276 %
+epoch: 266
+epoch 266, minibatch 1060/1196, test error of best model 95.4393305439 %, cost 4.14029121399
+epoch 266, minibatch 1060/1196, validation error 96.2761506276 %
+epoch: 267
+epoch: 268
+epoch 268, minibatch 668/1196, test error of best model 96.4853556485 %, cost 4.36518573761
+epoch 268, minibatch 668/1196, validation error 96.2343096234 %
+epoch: 269
+epoch: 270
+epoch 270, minibatch 276/1196, test error of best model 97.4476987448 %, cost 4.49042224884
+epoch 270, minibatch 276/1196, validation error 97.6569037657 %
+epoch: 271
+epoch 271, minibatch 1080/1196, test error of best model 95.8577405858 %, cost 4.31243467331
+epoch 271, minibatch 1080/1196, validation error 96.1506276151 %
+epoch: 272
+epoch: 273
+epoch 273, minibatch 688/1196, test error of best model 95.1882845188 %, cost 4.32036924362
+epoch 273, minibatch 688/1196, validation error 94.6443514644 %
+epoch: 274
+epoch: 275
+epoch 275, minibatch 296/1196, test error of best model 98.5355648536 %, cost 4.18290710449
+epoch 275, minibatch 296/1196, validation error 98.9121338912 %
+epoch: 276
+epoch 276, minibatch 1100/1196, test error of best model 94.8117154812 %, cost 4.39586162567
+epoch 276, minibatch 1100/1196, validation error 95.690376569 %
+epoch: 277
+epoch: 278
+epoch 278, minibatch 708/1196, test error of best model 98.4518828452 %, cost 4.74577331543
+epoch 278, minibatch 708/1196, validation error 98.8284518828 %
+epoch: 279
+epoch: 280
+epoch 280, minibatch 316/1196, test error of best model 98.4937238494 %, cost 4.77456521988
+epoch 280, minibatch 316/1196, validation error 98.7447698745 %
+epoch: 281
+epoch 281, minibatch 1120/1196, test error of best model 96.4853556485 %, cost 4.25611972809
+epoch 281, minibatch 1120/1196, validation error 96.2343096234 %
+epoch: 282
+epoch: 283
+epoch 283, minibatch 728/1196, test error of best model 97.9916317992 %, cost 4.55080890656
+epoch 283, minibatch 728/1196, validation error 97.949790795 %
+epoch: 284
+epoch: 285
+epoch 285, minibatch 336/1196, test error of best model 95.1882845188 %, cost 4.3350610733
+epoch 285, minibatch 336/1196, validation error 94.6443514644 %
+epoch: 286
+epoch 286, minibatch 1140/1196, test error of best model 94.8535564854 %, cost 4.41214132309
+epoch 286, minibatch 1140/1196, validation error 95.1464435146 %
+epoch: 287
+epoch: 288
+epoch 288, minibatch 748/1196, test error of best model 95.1882845188 %, cost 4.18554210663
+epoch 288, minibatch 748/1196, validation error 94.6443514644 %
+epoch: 289
+epoch: 290
+epoch 290, minibatch 356/1196, test error of best model 95.8577405858 %, cost 4.518014431
+epoch 290, minibatch 356/1196, validation error 96.1506276151 %
+epoch: 291
+epoch 291, minibatch 1160/1196, test error of best model 97.0711297071 %, cost 4.43681287766
+epoch 291, minibatch 1160/1196, validation error 97.5313807531 %
+epoch: 292
+epoch: 293
+epoch 293, minibatch 768/1196, test error of best model 97.2384937238 %, cost 4.80885696411
+epoch 293, minibatch 768/1196, validation error 96.8619246862 %
+epoch: 294
+epoch: 295
+epoch 295, minibatch 376/1196, test error of best model 96.4853556485 %, cost 4.29866695404
+epoch 295, minibatch 376/1196, validation error 96.2343096234 %
+epoch: 296
+epoch 296, minibatch 1180/1196, test error of best model 98.410041841 %, cost 5.11822605133
+epoch 296, minibatch 1180/1196, validation error 98.1171548117 %
+epoch: 297
+epoch: 298
+epoch 298, minibatch 788/1196, test error of best model 98.2845188285 %, cost 4.44920682907
+epoch 298, minibatch 788/1196, validation error 97.949790795 %
+epoch: 299
+epoch: 300
+epoch 300, minibatch 396/1196, test error of best model 95.8577405858 %, cost 3.92234587669
+epoch 300, minibatch 396/1196, validation error 96.1506276151 %
+epoch: 301
+epoch: 302
+epoch 302, minibatch 4/1196, test error of best model 96.4853556485 %, cost 4.21512746811
+epoch 302, minibatch 4/1196, validation error 96.2343096234 %
+epoch: 303
+epoch 303, minibatch 808/1196, test error of best model 96.4853556485 %, cost 4.01430988312
+epoch 303, minibatch 808/1196, validation error 96.2343096234 %
+epoch: 304
+epoch: 305
+epoch 305, minibatch 416/1196, test error of best model 95.4393305439 %, cost 4.486723423
+epoch 305, minibatch 416/1196, validation error 96.2761506276 %
+epoch: 306
+epoch: 307
+epoch 307, minibatch 24/1196, test error of best model 94.8535564854 %, cost 5.21690320969
+epoch 307, minibatch 24/1196, validation error 95.1464435146 %
+epoch: 308
+epoch 308, minibatch 828/1196, test error of best model 95.4393305439 %, cost 4.62606048584
+epoch 308, minibatch 828/1196, validation error 96.2761506276 %
+epoch: 309
+epoch: 310
+epoch 310, minibatch 436/1196, test error of best model 98.4518828452 %, cost 4.92188358307
+epoch 310, minibatch 436/1196, validation error 98.6610878661 %
+epoch: 311
+epoch: 312
+epoch 312, minibatch 44/1196, test error of best model 95.1882845188 %, cost 3.89447402954
+epoch 312, minibatch 44/1196, validation error 94.6443514644 %
+epoch: 313
+epoch 313, minibatch 848/1196, test error of best model 97.9079497908 %, cost 4.82630825043
+epoch 313, minibatch 848/1196, validation error 97.8661087866 %
+epoch: 314
+epoch: 315
+epoch 315, minibatch 456/1196, test error of best model 96.4853556485 %, cost 4.49486112595
+epoch 315, minibatch 456/1196, validation error 96.2343096234 %
+epoch: 316
+epoch: 317
+epoch 317, minibatch 64/1196, test error of best model 99.6234309623 %, cost 4.93449401855
+epoch 317, minibatch 64/1196, validation error 99.3305439331 %
+epoch: 318
+epoch 318, minibatch 868/1196, test error of best model 95.4393305439 %, cost 4.7232260704
+epoch 318, minibatch 868/1196, validation error 96.2761506276 %
+epoch: 319
+epoch: 320
+epoch 320, minibatch 476/1196, test error of best model 96.9037656904 %, cost 4.25944757462
+epoch 320, minibatch 476/1196, validation error 97.6987447699 %
+epoch: 321
+epoch: 322
+epoch 322, minibatch 84/1196, test error of best model 97.9916317992 %, cost 4.61637020111
+epoch 322, minibatch 84/1196, validation error 98.3682008368 %
+epoch: 323
+epoch 323, minibatch 888/1196, test error of best model 98.9539748954 %, cost 4.57724332809
+epoch 323, minibatch 888/1196, validation error 98.4518828452 %
+epoch: 324
+epoch: 325
+epoch 325, minibatch 496/1196, test error of best model 94.8535564854 %, cost 4.28372764587
+epoch 325, minibatch 496/1196, validation error 95.1464435146 %
+epoch: 326
+epoch: 327
+epoch 327, minibatch 104/1196, test error of best model 95.8577405858 %, cost 4.46926832199
+epoch 327, minibatch 104/1196, validation error 96.1506276151 %
+epoch: 328
+epoch 328, minibatch 908/1196, test error of best model 96.4853556485 %, cost 4.14529752731
+epoch 328, minibatch 908/1196, validation error 96.2343096234 %
+epoch: 329
+epoch: 330
+epoch 330, minibatch 516/1196, test error of best model 95.1882845188 %, cost 4.3150844574
+epoch 330, minibatch 516/1196, validation error 94.6443514644 %
+epoch: 331
+epoch: 332
+epoch 332, minibatch 124/1196, test error of best model 95.1882845188 %, cost 3.33176922798
+epoch 332, minibatch 124/1196, validation error 94.6443514644 %
+epoch: 333
+epoch 333, minibatch 928/1196, test error of best model 95.7740585774 %, cost 4.33736181259
+epoch 333, minibatch 928/1196, validation error 96.1506276151 %
+epoch: 334
+epoch: 335
+epoch 335, minibatch 536/1196, test error of best model 96.4853556485 %, cost 4.57597303391
+epoch 335, minibatch 536/1196, validation error 96.2343096234 %
+epoch: 336
+epoch: 337
+epoch 337, minibatch 144/1196, test error of best model 98.4518828452 %, cost 4.3614397049
+epoch 337, minibatch 144/1196, validation error 98.410041841 %
+epoch: 338
+epoch 338, minibatch 948/1196, test error of best model 96.4853556485 %, cost 4.49483346939
+epoch 338, minibatch 948/1196, validation error 96.2343096234 %
+epoch: 339
+epoch: 340
+epoch 340, minibatch 556/1196, test error of best model 98.0334728033 %, cost 4.85916900635
+epoch 340, minibatch 556/1196, validation error 98.1171548117 %
+epoch: 341
+epoch: 342
+epoch 342, minibatch 164/1196, test error of best model 98.0334728033 %, cost 4.4690990448
+epoch 342, minibatch 164/1196, validation error 97.949790795 %
+epoch: 343
+epoch 343, minibatch 968/1196, test error of best model 98.2845188285 %, cost 4.60301971436
+epoch 343, minibatch 968/1196, validation error 97.949790795 %
+epoch: 344
+epoch: 345
+epoch 345, minibatch 576/1196, test error of best model 98.0334728033 %, cost 4.41413402557
+epoch 345, minibatch 576/1196, validation error 97.949790795 %
+epoch: 346
+epoch: 347
+epoch 347, minibatch 184/1196, test error of best model 94.8535564854 %, cost 4.70621967316
+epoch 347, minibatch 184/1196, validation error 95.1464435146 %
+epoch: 348
+epoch 348, minibatch 988/1196, test error of best model 95.1882845188 %, cost 4.20043563843
+epoch 348, minibatch 988/1196, validation error 94.6443514644 %
+epoch: 349
+epoch: 350
+epoch 350, minibatch 596/1196, test error of best model 98.4518828452 %, cost 4.97111845016
+epoch 350, minibatch 596/1196, validation error 98.6610878661 %
+epoch: 351
+epoch: 352
+epoch 352, minibatch 204/1196, test error of best model 97.9916317992 %, cost 4.81759405136
+epoch 352, minibatch 204/1196, validation error 98.3682008368 %
+epoch: 353
+epoch 353, minibatch 1008/1196, test error of best model 94.8535564854 %, cost 4.18833637238
+epoch 353, minibatch 1008/1196, validation error 95.1464435146 %
+epoch: 354
+epoch: 355
+epoch 355, minibatch 616/1196, test error of best model 93.6820083682 %, cost 4.63789749146
+epoch 355, minibatch 616/1196, validation error 95.1464435146 %
+epoch: 356
+epoch: 357
+epoch 357, minibatch 224/1196, test error of best model 96.4853556485 %, cost 4.87482595444
+epoch 357, minibatch 224/1196, validation error 96.2343096234 %
+epoch: 358
+epoch 358, minibatch 1028/1196, test error of best model 94.8535564854 %, cost 4.52672958374
+epoch 358, minibatch 1028/1196, validation error 95.1464435146 %
+epoch: 359
+epoch: 360
+epoch 360, minibatch 636/1196, test error of best model 95.4393305439 %, cost 4.4743065834
+epoch 360, minibatch 636/1196, validation error 96.2761506276 %
+epoch: 361
+epoch: 362
+epoch 362, minibatch 244/1196, test error of best model 95.1882845188 %, cost 4.28377389908
+epoch 362, minibatch 244/1196, validation error 94.309623431 %
+epoch: 363
+epoch 363, minibatch 1048/1196, test error of best model 95.1882845188 %, cost 4.95864391327
+epoch 363, minibatch 1048/1196, validation error 94.6443514644 %
+epoch: 364
+epoch: 365
+epoch 365, minibatch 656/1196, test error of best model 97.6150627615 %, cost 4.69883012772
+epoch 365, minibatch 656/1196, validation error 97.6150627615 %
+epoch: 366
+epoch: 367
+epoch 367, minibatch 264/1196, test error of best model 95.4393305439 %, cost 4.78218793869
+epoch 367, minibatch 264/1196, validation error 96.2761506276 %
+epoch: 368
+epoch 368, minibatch 1068/1196, test error of best model 97.280334728 %, cost 5.0489525795
+epoch 368, minibatch 1068/1196, validation error 97.5732217573 %
+epoch: 369
+epoch: 370
+epoch 370, minibatch 676/1196, test error of best model 95.4393305439 %, cost 4.46391391754
+epoch 370, minibatch 676/1196, validation error 96.2761506276 %
+epoch: 371
+epoch: 372
+epoch 372, minibatch 284/1196, test error of best model 95.1882845188 %, cost 4.2354054451
+epoch 372, minibatch 284/1196, validation error 94.6443514644 %
+epoch: 373
+epoch 373, minibatch 1088/1196, test error of best model 95.8577405858 %, cost 3.90004754066
+epoch 373, minibatch 1088/1196, validation error 95.9414225941 %
+epoch: 374
+epoch: 375
+epoch 375, minibatch 696/1196, test error of best model 95.4393305439 %, cost 4.36894083023
