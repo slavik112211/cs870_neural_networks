@@ -199,7 +199,7 @@ class MLP(object):
 
 
 def test_mlp(learning_rate=0.01, L1_reg=0.00, L2_reg=0.0001, n_epochs=1000,
-             dataset='mnist.pkl.gz', batch_size=20, n_hidden=50000):
+             dataset='mnist.pkl.gz', batch_size=10, n_hidden=1000):
     """
     Demonstrate stochastic gradient descent optimization for a multilayer
     perceptron
@@ -228,15 +228,15 @@ def test_mlp(learning_rate=0.01, L1_reg=0.00, L2_reg=0.0001, n_epochs=1000,
 
    """
     # datasets = load_data(dataset)
-    datasets = load_trains_dataset(False)
+    datasets = load_trains_dataset(True)
 
     train_set_x, train_set_y = datasets[0]
-    # valid_set_x, valid_set_y = datasets[1]
+    valid_set_x, valid_set_y = datasets[1]
     test_set_x, test_set_y = datasets[2]
 
     # compute number of minibatches for training, validation and testing
     n_train_batches = train_set_x.get_value(borrow=True).shape[0] // batch_size
-    # n_valid_batches = valid_set_x.get_value(borrow=True).shape[0] // batch_size
+    n_valid_batches = valid_set_x.get_value(borrow=True).shape[0] // batch_size
     n_test_batches = test_set_x.get_value(borrow=True).shape[0] // batch_size
 
     ######################
@@ -283,14 +283,14 @@ def test_mlp(learning_rate=0.01, L1_reg=0.00, L2_reg=0.0001, n_epochs=1000,
         }
     )
 
-    # validate_model = theano.function(
-    #     inputs=[index],
-    #     outputs=classifier.errors(y),
-    #     givens={
-    #         x: valid_set_x[index * batch_size:(index + 1) * batch_size],
-    #         y: valid_set_y[index * batch_size:(index + 1) * batch_size]
-    #     }
-    # )
+    validate_model = theano.function(
+        inputs=[index],
+        outputs=classifier.errors(y),
+        givens={
+            x: valid_set_x[index * batch_size:(index + 1) * batch_size],
+            y: valid_set_y[index * batch_size:(index + 1) * batch_size]
+        }
+    )
 
     # start-snippet-5
     # compute the gradient of cost with respect to theta (sorted in params)
@@ -340,7 +340,7 @@ def test_mlp(learning_rate=0.01, L1_reg=0.00, L2_reg=0.0001, n_epochs=1000,
                                   # on the validation set; in this case we
                                   # check every epoch
 
-    validation_frequency = 480 # verify test dataset accuracy after 4800*10 trained images; 48000 / 11967 (4 epochs)
+    validation_frequency = 2000 # verify test dataset accuracy after 4800*10 trained images; 48000 / 11967 (4 epochs)
 
     # best_validation_loss = numpy.inf
     # best_iter = 0
@@ -350,8 +350,11 @@ def test_mlp(learning_rate=0.01, L1_reg=0.00, L2_reg=0.0001, n_epochs=1000,
     epoch = 0
     # done_looping = False
 
+    outputFile = open("./training_log.txt", "w", 0)
+
     while (epoch < n_epochs):
         epoch = epoch + 1
+        print("epoch: " + str(epoch)); outputFile.write("epoch: " + str(epoch) +"\n")
         for minibatch_index in range(n_train_batches):
 
             minibatch_avg_cost = train_model(minibatch_index)
@@ -363,33 +366,29 @@ def test_mlp(learning_rate=0.01, L1_reg=0.00, L2_reg=0.0001, n_epochs=1000,
                                for i in range(n_test_batches)]
                 test_score = numpy.mean(test_losses)
 
-                print(
-                    (
-                        'epoch %i, minibatch %i/%i, test error of'
-                        ' best model %f %%, cost %f'
-                    ) %
-                    (
-                        epoch,
-                        minibatch_index + 1,
-                        n_train_batches,
-                        test_score * 100.,
-                        minibatch_avg_cost
-                    )
+                test_data_accuracy = 'epoch {0}, minibatch {1}/{2}, test error of best model {3} %, cost {4}\n'.format(
+                    epoch,
+                    minibatch_index + 1,
+                    n_train_batches,
+                    test_score * 100.,
+                    minibatch_avg_cost
                 )
-                # # compute zero-one loss on validation set
-                # validation_losses = [validate_model(i) for i
-                #                      in range(n_valid_batches)]
-                # this_validation_loss = numpy.mean(validation_losses)
+                print(test_data_accuracy)
+                outputFile.write(test_data_accuracy)
 
-                # print(
-                #     'epoch %i, minibatch %i/%i, validation error %f %%' %
-                #     (
-                #         epoch,
-                #         minibatch_index + 1,
-                #         n_train_batches,
-                #         this_validation_loss * 100.
-                #     )
-                # )
+                # # compute zero-one loss on validation set
+                validation_losses = [validate_model(i) for i
+                                     in range(n_valid_batches)]
+                this_validation_loss = numpy.mean(validation_losses)
+
+                validation_data_accuracy = 'epoch {0}, minibatch {1}/{2}, validation error {3} %\n'.format(
+                    epoch,
+                    minibatch_index + 1,
+                    n_train_batches,
+                    this_validation_loss * 100.
+                )
+                print(validation_data_accuracy)
+                outputFile.write(validation_data_accuracy)
 
                 # # if we got the best validation score until now
                 # if this_validation_loss < best_validation_loss:

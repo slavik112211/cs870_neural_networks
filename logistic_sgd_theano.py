@@ -212,7 +212,13 @@ def load_trains_dataset(with_noise=True):
   train_set_size = total_labelled_images - test_set_size  # 11967 / 1197
   test_set_filenames = random.sample(img_filenames, test_set_size)
 
-  training_data = []; training_labels = []; test_data = []; test_labels = [];
+  pdb.set_trace()
+  training_filenames = list(set(img_filenames) - set(test_set_filenames))
+  validation_img_filenames = random.sample(training_filenames, test_set_size)
+
+  training_data = []; training_labels = [];
+  test_data = []; test_labels = [];
+  validation_data = []; validation_labels = [];
   random.shuffle(img_filenames)
 
   for index, image_file in enumerate(img_filenames):
@@ -234,16 +240,23 @@ def load_trains_dataset(with_noise=True):
     # category_id = categories_list.index(category)
     category_id = trains_dataset.get_category_id(category)
 
-    if image_file not in test_set_filenames:
+    if image_file in training_filenames: 
       training_data.append(image_matrix)
       training_labels.append(category_id)
-    else:
+
+    if image_file in test_set_filenames:
       test_data.append(image_matrix)
       test_labels.append(category_id)
+
+    if image_file in validation_img_filenames:
+      validation_data.append(image_matrix)
+      validation_labels.append(category_id)
 
   # pdb.set_trace()
   training_data = numpy.array(training_data)
   training_labels = numpy.array(training_labels)
+  validation_data = numpy.array(validation_data)
+  validation_labels = numpy.array(validation_labels)
   test_data = numpy.array(test_data)
   test_labels = numpy.array(test_labels)
 
@@ -252,9 +265,9 @@ def load_trains_dataset(with_noise=True):
   # training_data = training_data[perm]
   # training_labels = training_labels[perm]
 
-  dataset = ((training_data, training_labels), (test_data, test_labels))
+  dataset = ((training_data, training_labels), (validation_data, validation_labels), (test_data, test_labels))
 
-  test_set_x, test_set_y = shared_dataset(dataset[1])
+  test_set_x, test_set_y = shared_dataset(dataset[2])
   valid_set_x, valid_set_y = shared_dataset(dataset[1])
   train_set_x, train_set_y = shared_dataset(dataset[0])
 
